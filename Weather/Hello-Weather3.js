@@ -70,10 +70,10 @@ var spacing = parseInt(inputArr[1]);
 
 // Load Your api in "".Get a free API key here: https://openweathermap.org/appid
 // 在 "" 内填写你的API—_KEY。在此处获取免费的API密钥：https://openweathermap.org/appid
-let API_WEATHER = "89065f71db2277c83d22a779a34f16a7"; 
+let API_WEATHER = "b205a5ffc777c2abafffc801cc43c191"; 
 // add your city ID
 // 在 "" 内填入你的City ID。
-let CITY_WEATHER = "1809858";
+let CITY_WEATHER = "1809104";
 
 // Set to imperial for Fahrenheit, or metric for Celsius
 // 华氏度设置为英制imperial，摄氏度设置为公制metric
@@ -251,22 +251,22 @@ var months = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10
 // Greetings arrays per time period. 
 // 每个时间段的问候语。
 var greetingsMorning = [
-'早上好.靓仔'
+'早啊.Torsten'
 ];
 var greetingsNoon = [
-'中午好.靓仔'
+'好好吃饭.Torsten'
 ];
 var greetingsAfternoon = [
-'下午好.靓仔'
+'下午好.Torsten'
 ];
 var greetingsEvening = [
-'晚上好.靓仔'
+'天涯此时.Torsten'
 ];
 var greetingsNight = [
-'睡觉时间.靓仔'
+'夜幕沉沉.Torsten'
 ];
 var greetingsLateNight = [
-'赶紧睡觉!!!'
+'晚安.Torsten!'
 ];
 
 // Holiday customization.
@@ -546,7 +546,7 @@ if(Device.isCharging() && Device.batteryLevel() >= 1){
   battery = battery + " ⚡ 已充满电!请拔下电源!";
 }
 else if(Device.batteryLevel() > 0.8 && Device.batteryLevel() <= 1 && !Device.isCharging()){
-  battery = battery + " 电量充足,很有安全感!";
+  battery = battery + " 电量充足";
 }
 else if(Device.batteryLevel() >= 0.7 && Device.batteryLevel() < 0.8){
   battery = battery + " 电量充足,不出远门没有问题!";
